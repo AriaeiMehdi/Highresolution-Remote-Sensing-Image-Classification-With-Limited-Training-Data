@@ -1,4 +1,3 @@
-We suggest using a straightforward autoencoding technique 
 to recreate the original image. Our method, like all autoencoders, 
 consists of an encoder that converts the observed image to a 
 latent representation and a decoder that uses the latent 
@@ -86,3 +85,12 @@ its terminus. We feed the encoder with spatial and spectral data
 from our limited set of training samples. This process is 
 meticulously designed to ensure that the encoder, now 
 repurposed, effectively adapts to its new role in the pipeline. 
+This repository contains the MATLAB implementation of the paper:
+
+High-Resolution Remote Sensing Image Classification With Limited Training Data
+
+Mehdi Ariaei, Hassan Ghassemian, and Maryam Imani
+
+13th Iranian / 3rd International Machine Vision and Image Processing Conference (MVIP), 2024.
+
+The proposed method leverages unsupervised feature learning with an asymmetric dual-input autoencoder followed by transfer learning on multi-spectral WorldView-3 satellite imagery. The pipeline extracts rich spatial–spectral representations using autoencoders and then re-trains the encoder on limited labeled samples to achieve accurate per-pixel classification.
